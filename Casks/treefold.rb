@@ -1,8 +1,8 @@
 cask "treefold" do
-  version "0.1.0-alpha.20260821005557"
-  sha256 "bfa85521dc31ab81069cf92719b29053972d3a96c952d247c9e5a06f1e0f263d"
+  version "0.1.0-alpha.1"
+  sha256 "a8efacc7f3238b9ad96777c9095598e3b20d769e7af62c75a1852b8d597efed0"
 
-  url "https://github.com/win5do/treefold/releases/download/v#{version}/Treefold_#{version}_aarch64.dmg"
+  url "https://github.com/win5do/treefold/releases/download/v#{version}/Treefold-#{version}-arm64.dmg"
   name "Treefold"
   desc "Local-first workspace for parallel coding agents"
   homepage "https://github.com/win5do/treefold"

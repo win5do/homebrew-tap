@@ -1,28 +1,32 @@
 # Homebrew Tap for Treefold
 
-This repository is the Homebrew tap `win5do/tap`. Its Treefold Cask is prepared
-for release assets published by `win5do/treefold`.
+This repository is the Homebrew tap `win5do/tap`. It installs Treefold from the
+public release assets published by `win5do/treefold`.
 
 ## Install
 
-Once the referenced GitHub Release is available:
+Requires Apple Silicon and macOS Sonoma 14 or later.
 
 ```bash
 brew install --cask win5do/tap/treefold
 ```
 
-For private testing from this local checkout:
+To upgrade an existing installation:
 
 ```bash
-brew tap win5do/tap /Users/admin/code/codebase/self/rs-agent/homebrew-tap
-brew install --cask win5do/tap/treefold
+brew update
+brew upgrade --cask treefold
 ```
 
-The current Cask is ARM64-only and expects this release contract:
+The current release is `0.1.0-alpha.1`. It is ad-hoc signed and is not notarized
+by Apple. On first launch, approve Treefold in **System Settings → Privacy &
+Security → Open Anyway** if macOS blocks it.
+
+The Cask is ARM64-only and expects this release contract:
 
 ```text
 tag:   v<VERSION>
-asset: Treefold_<VERSION>_aarch64.dmg
+asset: Treefold-<VERSION>-arm64.dmg
 ```
 
 For each release, update `version` and `sha256` in `Casks/treefold.rb` from the
