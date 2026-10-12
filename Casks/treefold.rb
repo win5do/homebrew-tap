@@ -13,7 +13,7 @@ cask "treefold" do
   app "Treefold.app"
 
   caveats <<~EOS
-    This alpha release is ad-hoc signed. On first launch, macOS may require you
+    Treefold is ad-hoc signed. On first launch, macOS may require you
     to approve Treefold in System Settings > Privacy & Security.
   EOS
 end

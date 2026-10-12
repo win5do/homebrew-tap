@@ -26,8 +26,7 @@ brew update
 brew upgrade --cask treefold
 ```
 
-The current release is `0.1.0-alpha.1`. It is ad-hoc signed and is not notarized
-by Apple. On first launch, approve Treefold in **System Settings → Privacy &
+Treefold is ad-hoc signed and is not notarized by Apple. On first launch, approve Treefold in **System Settings → Privacy &
 Security → Open Anyway** if macOS blocks it.
 
 The Cask does not link the bundled `treefold` CLI or remove `~/.treefold` on
@@ -51,6 +50,7 @@ tag:   v<VERSION>
 asset: Treefold-<VERSION>-arm64.dmg
 ```
 
-For each release, update `version` and `sha256` in `Casks/treefold.rb` from the
-exact DMG that is uploaded. When an Intel artifact is published, add an `arch`
-stanza, per-architecture checksums, and the matching `x64` release asset.
+The Treefold release workflow updates `version` and `sha256` in
+`Casks/treefold.rb` after verifying the published DMG through Homebrew. When an
+Intel artifact is published, add an `arch` stanza, per-architecture checksums,
+and the matching `x64` release asset.
