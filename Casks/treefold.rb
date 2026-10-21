@@ -1,6 +1,6 @@
 cask "treefold" do
-  version "0.1.2"
-  sha256 "2696ca287686b4935f13fef4c02ec6325ce3c294289b7aea50ad82c956f629f7"
+  version "0.1.3"
+  sha256 "bc7a2f0ec7c26cf35e2da14e3233afc945f254f7d23eaa9db26434e53412ff00"
 
   url "https://github.com/win5do/treefold/releases/download/v#{version}/Treefold-#{version}-arm64.dmg"
   name "Treefold"
